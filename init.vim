@@ -121,7 +121,7 @@ set splitright
 let g:ale_fixers = {
 \  'javascript': ['prettier'],
 \}
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5 --stdin'
+let g:ale_javascript_prettier_options = 'yarn prettier'
 
 " vim-expand-region.
 vmap v <Plug>(expand_region_expand)
