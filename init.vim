@@ -21,7 +21,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'sbdchd/neoformat'
+Plug 'w0rp/ale'
 " Fzf.
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -63,7 +63,7 @@ nnoremap <Leader>s :wall<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>w :Windows<CR>
 nnoremap <Leader>y; :edit #<CR>
-nnoremap <Leader>yf :Neoformat<CR>
+nnoremap <Leader>yf :ALEFix<CR>
 nnoremap <Leader>yn :bnext<CR>
 nnoremap <Leader>yp :bprevious<CR>
 nnoremap <Leader>yq :Bclose<CR>
@@ -117,10 +117,11 @@ set splitright
 
 " Plugins settings.
 
-" Neoformat and Prettier.
-autocmd FileType javascript set formatprg=prettier\ --no-semi\ --single-quote\ --trailing-comma\ es5\ --stdin
-" Use formatprg when available
-let g:neoformat_try_formatprg=1
+" Ale.
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\}
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5 --stdin'
 
 " vim-expand-region.
 vmap v <Plug>(expand_region_expand)
