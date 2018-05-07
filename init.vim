@@ -119,7 +119,7 @@ set splitright
 
 " Ale.
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
+\  'javascript': ['prettier'],
 \}
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5 --stdin'
 
