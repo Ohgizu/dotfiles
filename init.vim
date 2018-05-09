@@ -120,8 +120,10 @@ set splitright
 " Ale.
 let g:ale_fixers = {
 \  'javascript': ['prettier'],
+\  'json': ['prettier'],
 \}
 let g:ale_javascript_prettier_options = 'yarn prettier'
+let g:ale_json_prettier_options = 'yarn prettier'
 
 " vim-expand-region.
 vmap v <Plug>(expand_region_expand)
