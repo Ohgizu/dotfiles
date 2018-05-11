@@ -119,6 +119,7 @@ set splitright
 
 " Ale.
 let g:ale_fixers = {
+\  'css': ['prettier'],
 \  'javascript': ['prettier'],
 \  'json': ['prettier'],
 \}
