@@ -43,7 +43,6 @@ nnoremap <C-j> :cnext<CR>
 nnoremap <C-k> :cprevious<CR>
 nnoremap <Leader>; <C-w>p
 nnoremap <Leader>a :Ag<Space>
-nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
@@ -69,6 +68,7 @@ nnoremap <Leader>yp :bprevious<CR>
 nnoremap <Leader>yq :Bclose<CR>
 nnoremap <Leader>yr :edit!<CR>
 nnoremap <Leader>yt :BTags<CR>
+nnoremap <Leader>zb :Buffers<CR>
 nnoremap <Leader>zh :History<CR>
 nnoremap <Leader>zl :Lines<CR>
 nnoremap <Leader>zm :Marks<CR>
