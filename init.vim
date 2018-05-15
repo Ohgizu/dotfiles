@@ -73,9 +73,9 @@ nnoremap <Leader>zh :History<CR>
 nnoremap <Leader>zl :Lines<CR>
 nnoremap <Leader>zm :Marks<CR>
 nnoremap <Leader>zt :Tags<CR>
-cnoremap <C-A> <Home>
-cnoremap <C-B> <Left>
-cnoremap <C-F> <Right>
+cnoremap <C-a> <Home>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
 
 " Enable mouse, sometimes it's useful.
 set mouse=a
